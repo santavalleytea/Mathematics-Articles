@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsfonts, amsmath, amssymb, amsthm, graphicx, booktabs}
+\usepackage{amsfonts, amsmath, amssymb, amsthm, graphicx, booktabs, hyperref}
 \usepackage[none]{hyphenat}
 \usepackage{fancyhdr}
 
@@ -33,9 +33,9 @@ Abstractness is not a new concept at all in the field of mathematics. It is rela
 
 \noindent Let's consider a popular challenge involving $\pi$: how many digits of $\pi$ can you recite? Is it 10 digits? 100 digits? maybe even 1000? According to the Guinness World Records, \textbf{Rajveer Meena} holds the record for memorizing an astonishing \textbf{70,000 digits of $\pi$} \cite{guinness2017}. While this feat is nothing short of extraordinary, it barely scratches the surface, as $\pi$ continues infinitely.\\
 
-\noindent This raises an important question: how can a value that never ends be used in real life? And who discovered $\pi$ in the first place? Let's take a brief journey through the history of $\pi$. \\
+\noindent This raises an important question: how can a never-ending value be used in real life? And who discovered $\pi$ in the first place? Let's take a brief journey through the history of $\pi$. \\
 
-\noindent The earliest known approximations of $\pi$ come from the \textbf{Babylonians} (c. 1900-1600 BCE) where they calculated the area of a circle by taking three times the square of its radius, giving $\pi \approx 3$. They were also able to improve this approximation to $\frac{25}{8} = $ 3.125 \cite{exploratorium_pi}. Around the same time period, the \textbf{Ancient Egyptians} (c. 1650 BCE) , as recorded in the \textbf{Rhind Mathematical Papyrus} (written by the scribe \textbf{Ahmes}) approximated $\pi$ as $(\frac{16}{9})^2 \approx 3.16$ \cite{exploratorium_pi}. Nonetheless, the first to rigorously calculate the bounds of $\pi$ was done by one of the most famous mathematicians in history, \textbf{Archimedes of Syracuse} (c. 287 - 212 BCE). He achieved this by inscribing and circumscribing polygons around a circle. By increasing the number of sides of these polygons, Archimedes was able to narrow down the value of $\pi$ \cite{b2020archimedesshowedpiapproximately} (see Appendix A.1).\\
+\noindent The earliest known approximations of $\pi$ comes from the \textbf{Babylonians} (c. 1900-1600 BCE) where they calculated the area of a circle by taking three times the square of its radius, giving $\pi \approx 3$. They were also able to improve this approximation to $\frac{25}{8} = $ 3.125 \cite{exploratorium_pi}. Around the same time period, the \textbf{Ancient Egyptians} (c. 1650 BCE) , as recorded in the \textbf{Rhind Mathematical Papyrus} (written by the scribe \textbf{Ahmes}) approximated $\pi$ as $(\frac{16}{9})^2 \approx 3.16$ \cite{exploratorium_pi}. Nonetheless, the first to rigorously calculate the bounds of $\pi$ was done by one of the most famous mathematicians in history, \textbf{Archimedes of Syracuse} (c. 287 - 212 BCE). He achieved this by inscribing and circumscribing polygons around a circle. By increasing the number of sides of these polygons, up until a $96$-sided polygon, Archimedes was able to narrow down the value of $\pi$ \cite{b2020archimedesshowedpiapproximately}. A brief outline of Archimedes' method for approximating $\pi$ is given in \hyperref[appendix:1]{Appendix 1}.\\
 
 \noindent He established the following bounds for $\pi$:
 \begin{center}
@@ -43,27 +43,27 @@ Abstractness is not a new concept at all in the field of mathematics. It is rela
 \end{center}
 The following image illustrates this method by showing a circle with inscribed polygons of increasing sides, demonstrating how the polygons approach the shape of the circle more closely:
 \begin{center}
-\includegraphics[width=1\textwidth]{images/Figure_1.png}
+    \includegraphics[width=1\textwidth]{images/Figure_1.png}
+    \caption{Figure 1. A circle inscribed and circumscribed by a triangle, pentagon and a decagon.}
 \end{center}
 
-\noindent As the number of sides increases (e.g., triangles, pentagons, decagons), the polygons approximate the circumference of the circle more precisely. This technique laid the foundation for future numeral methods to approximate $\pi$. \\
+\noindent As the number of sides increases (e.g., triangles, pentagons, decagons), the polygons approximate the circumference of the circle more precisely. This technique laid the foundation for future methods to approximate $\pi$. \\
 
-\noindent Further down the line, we get closer to what we might all be familiar in the modern-day representation of $\pi$. In \textbf{Ancient China}, two figures made significant discoveries regarding $\pi$. Chinese mathematician \textbf{Liu Hui} (c. 3rd Century CE) used a 96-sided polygon and calculated $\pi$ to be approximately $3.14159$. Additionally, another mathematician, \textbf{Zu Chongzhi} (c. 5th Century CE) calculated $\pi$ to seven decimal places ($3.1415926$) and further gave a fractional approximation $\frac{355}{113}$, which remained highly accurate for around 1000 years after its discovery \cite{straffin1998}.  \\
+\noindent Further down the line, we get closer to what we might all be familiar in the modern-day representation of $\pi$. In \textbf{Ancient China}, two figures made significant discoveries regarding $\pi$. Chinese mathematician \textbf{Liu Hui} (c. 3rd Century CE), similar to Archimedes' method, used a 96-sided polygon and further refining his method by using a $192$-sided polygon, calculated $\pi$ to be approximately $3.14159$. Additionally, another mathematician, \textbf{Zu Chongzhi} (c. 5th Century CE) calculated $\pi$ to seven decimal places ($3.1415926$) and further gave a fractional approximation $\frac{355}{113}$, which remained highly accurate for around 1000 years after its discovery \cite{straffin1998}.  \\
 
-\noindent Of course there is much more to the history of
-$\pi$, but brief overview shows how the value of $\pi$ has evolved over time. Now, let's delve into the fascinating irrationality of $\pi$
+\noindent Of course there is so much more to the history of $\pi$, but this brief overview shows how the value of $\pi$ has evolved over time. Now, let's delve into the fascinating irrationality of $\pi$.
 
 \subsection{The Irrationality of $\pi$: Why Saying $\pi$ is Infinite Isn't Entirely Accurate}
 
-\noindent Let's discuss what it means for a value to be \textbf{irrational}. An irrational number is simply a number that is \textbf{not rational}. In other words, it cannot be expressed as a ratio of two numbers (like $\frac{a}{b}$ where $a,b \in \mathbb{Z}$ and $b \neq 0$).\\
+\noindent Let us discuss what it means for a value to be \textbf{irrational}. An irrational number is simply a number that is \textbf{not rational}. In other words, it cannot be expressed as a ratio of two numbers (like $\frac{a}{b}$ where $a,b \in \mathbb{Z}$ and $b \neq 0$).\\
 
-\noindent For example, consider the number $\sqrt{2}$. No matter how hard one tries, it is impossible to express $\sqrt{2}$ as a simple fraction like $\frac{p}{q}$. The decimal expansion of this value goes on forever without repeating (see Appendix A.2):
+\noindent For example, consider the number $\sqrt{2}$. No matter how hard one tries, it is impossible to express $\sqrt{2}$ as a simple fraction like $\frac{p}{q}$. The decimal expansion of this value goes on forever without repeating. A proof of this is outlined in \hyperref[appendix:2]{Appendix 2}:
 \begin{center}
     $1.41421356\ldots$
 \end{center}
 This \textbf{non-repeating, non-terminating} nature is the defining feature of irrational numbers.\\
 
-\noindent The number $\pi$ also shares this property. In \textbf{1768}, \textbf{Johann Lambert} proved that $\pi$ is irrational \cite{Denis}, to which \textbf{Miklós Laczkovich} gave a more modern and accessible proof in $1997$ (see Appendix A.3). This means that there is no fraction $\frac{a}{b}$ that equals $\pi$ exactly. Its decimal expansion goes on forever without ever settling into a repeating pattern:
+\noindent The number $\pi$ also shares this property. In \textbf{1768}, \textbf{Johann Lambert} proved that $\pi$ is irrational \cite{Denis}, to which \textbf{Miklós Laczkovich} gave a more modern and accessible proof in $1997$. A brief outline of Laczkovich's proof can be seen in \hyperref[appendix:3]{Appendix 3}. This means that there is no fraction $\frac{a}{b}$ that equals $\pi$ exactly. Its decimal expansion goes on forever without ever settling into a repeating pattern:
 \begin{center}
     $\pi = 3.14159265358979\ldots$
 \end{center}
@@ -92,7 +92,7 @@ This \textbf{non-repeating, non-terminating} nature is the defining feature of i
 
 \noindent It is remarkable how finite values (even certain rational numbers) can have infinite decimal expressions. But why does this happen? The answer lies in the limitations of the \textbf{base-10 decimal system} we use. \\
 
-\noindent In a \textbf{base-10} system, we represent numbers using powers of 10. When converting a number into a decimal format, we express it as a sum of these powers. For example, the decimal $2.136$ means:
+\noindent In a \textbf{base-10} system, we represent numbers using powers of 10. When converting a number into a decimal format, we express it as a sum of these powers. For example, the decimal $2.136$ can be represented as:
 \begin{center}
     $2 \times 10^0 + 1 \times 10^{-1} + 3 \times 10^{-2} + 6 \times 10^{-3}$
 \end{center}
@@ -123,7 +123,7 @@ You can never write down the \textit{exact} length in decimal form since the dig
 \section{Applications}
 
 \subsection{Ratio of a Circle's Circumference}
-There have already been previous mentions of $\pi$ as the ratio of a circle's circumference. Here, I will go a little more in depth and explain how this relationship is applicable in the real world.\\
+There have already been previous mentions of $\pi$ as the ratio of a circle's circumference. Here, I will go a little more in depth into how this relationship is applicable in the real world.\\
 
 \noindent $\pi$ is fundamentally defined as the ratio of a circle's circumference $C$ to its diameter $d$:
 \begin{center}
@@ -203,6 +203,7 @@ where $\theta$ is the angle measured in \textbf{radians}, and one full cycle cor
     \end{itemize}
     \begin{center}
         \includegraphics[width=1\textwidth]{images/Figure_2.png}
+        \caption{Figure 2. Visualization of an electromagnetic wave}
     \end{center}
     \noindent In summary, the electric field $E(x,t)$ oscillates in the $y$-direction $(\hat{j})$, the magnetic field $B(x,t)$ oscillates in the $z$-direction $(\hat{k})$ and the wave propagates in the $x$-direction.
 \end{enumerate}
@@ -219,9 +220,13 @@ where $\theta$ is the angle measured in \textbf{radians}, and one full cycle cor
 \begin{center}
     $\pi = 4 \sum\limits_{n=0}^\infty \frac{(-1)^n}{2n + 1} = 4\left(1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \ldots\right)$ \quad [7]
 \end{center}
-The above is the \textbf{Leibniz series}, which shows that calculating the exact value of $\pi$ requires the summation of an infinite number of terms. It highlights how the \textbf{finite value} of $\pi$ is intrinsically tied to a \textbf{never-ending process}.
+The above is known as the \textbf{Leibniz series}, which shows that calculating the exact value of $\pi$ requires the summation of an infinite number of terms. It highlights how the \textbf{finite value} of $\pi$ is intrinsically tied to a \textbf{never-ending process}.
 
-\includegraphics[width=1\textwidth]{images/Figure_3.png}
+\begin{center}
+    \includegraphics[width=1\textwidth]{images/Figure_3.png}
+    \caption{Figure 3. Convergence of the Leibniz series for $\pi$}
+\end{center}
+
 
 \noindent The above figure shows that the more terms you add to the Leibniz series, the closer and closer you get to the true value of $\pi$.
 
@@ -244,9 +249,9 @@ While $\pi$ has an infinite decimal expansion, in practice, we rarely need its f
 
 \appendix
 
-\section{Idea Behind the Proofs}
+\section{Appendices}
 
-\subsection{Archimedes' Method for Approximating $\pi$}
+\subsection{Archimedes' Method for Approximating $\pi$}\label{appendix:1}
 
 \noindent Let $C$ be the circumference of a circle with radius $r$. The circumference is related to $\pi$ by $C = 2\pi r$.\\
 
@@ -293,7 +298,8 @@ or in decimal form:
 We can also take a look at the following table of approximations to see that the approximation error gets increasingly smaller:
 \subsection*{Table of Approximations}
 
-\begin{center}
+\begin{table}[h]
+    \centering
     \begin{tabular}{cccc}
         \toprule
         \textbf{Iterations} & \textbf{Sides} & \textbf{Result} & \textbf{Error} \\
@@ -311,12 +317,14 @@ We can also take a look at the following table of approximations to see that the
         10 & 4096  & 3.1415923456 & -0.0000003080 \\
         \bottomrule
     \end{tabular}
-\end{center}
+    \caption{Results of polygon approximations for \(\pi\) with increasing iterations \cite{craigwood2023}.}
+    \label{tab:pi_approximation}
+\end{table}
 
 \noindent For a more detailed explanation, see: \textbf{Damini D.B and Abhishek Dhar}. \textit{How Archimedes show that $\pi$ is approximately equal to $\frac{22}{7}$} \cite{b2020archimedesshowedpiapproximately}. 
 
 
-\subsection{Euclid's Proof of the Irrationality of $\sqrt{2}$}
+\subsection{Euclid's Proof of the Irrationality of $\sqrt{2}$}\label{appendix:2}
 
 \noindent \textbf{Statement:} The square root of $2$ is irrational.\\
 
@@ -365,7 +373,8 @@ The above equation is now in a simpler form than the initial $\frac{p}{q}$. Howe
 \end{proof}
 
 
-\subsection{Laczkovich's Proof of the Irrationality of $\pi$}
+\subsection{Laczkovich's Proof of the Irrationality of $\pi$}\label{appendix:3}
+
 \begin{proof}
 Suppose, for contradiction, that $\pi$ is rational. That is $\pi = \frac{p}{q}$, where $p, q \in \mathbb{Z}$.\\
 
@@ -387,14 +396,14 @@ We can then rewrite the equation by multiplying both sides by $q^{2n+1}$ to clea
 \end{equation}
 Observe that the right-hand side is an infinite sum of terms involving integers, alternating in sign. However, also notice that this sum cannot equal zero unless $p = 0$, which contradicts the initial assumption that $\pi = \frac{p}{q}$ is a non-zero value.\\
 
-\noindent Hence, $\pi$ is not rational and must be irrational.
+\noindent Hence, $\pi$ is not rational and as a result, must be irrational.
 
 \end{proof}
 
 \noindent For a more detail explanation, see: 
 \textbf{Laczkovich, M. (1997)}. \textit{On Lambert's proof the irrationality of $\pi$}. \textbf{American Mathematical Monthly, 104(5), 439-443} \cite{Laczkovich1997}.
 
-\subsection{Leibniz's Series for $\pi$}
+\subsection{Leibniz's Series for $\pi$}\label{appendix:4}
 
 The Leibniz series for $\pi$ is given by:
 \begin{center}
