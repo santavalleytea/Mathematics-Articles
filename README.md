@@ -1,4 +1,4 @@
-# Mathematics-Articles
+# Mathematics Articles
 
 ## Introduction
 This repository is a collection of Mathematics Papers that I wrote up for fun. I am by no means an experienced or trained researcher, thus the papers are written in a more 
