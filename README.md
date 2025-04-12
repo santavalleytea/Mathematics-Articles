@@ -5,7 +5,7 @@ You can download full PDFs or explore LaTeX and Python source code from the GitH
 
 ## 🔗 Articles
 
-- [📄 The Paradox of Pi](The%20Paradox%20of%20Pi/The_Paradox_of_Pi.pdf): Exploring the irrationality of $\pi$ and its infinite decimal expansion.
+- 📄[The Paradox of Pi](The%20Paradox%20of%20Pi/The_Paradox_of_Pi.pdf): Exploring the irrationality of $\pi$ and its infinite decimal expansion.
 
 ## 🧠 About
 
