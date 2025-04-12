@@ -1,0 +1,7 @@
+title: "Mathematics Articles"
+description: "Exploring the beauty of math in an approachable way."
+theme: minima
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
