@@ -1,8 +1,3 @@
----
-layout: default
-title: Home
----
-
 # 📘 Mathematics Articles
 
 Welcome! This is a collection of mathematics papers written in a casual, exploratory tone.  
