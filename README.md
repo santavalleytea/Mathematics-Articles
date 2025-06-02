@@ -1,6 +1,6 @@
 # 📘 Mathematics Articles
 
-Welcome! This is a collection of mathematics papers written in a casual, exploratory tone.  
+Welcome! This is a collection of mathematics papers exploring various topics.  
 You can download full PDFs or explore LaTeX and Python source code from the GitHub repo.
 
 ## 🔗 Articles
